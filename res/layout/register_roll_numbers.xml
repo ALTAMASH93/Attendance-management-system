@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="Sequential Rolls :" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="33dp"
+        android:textColor="#ffffff"
+        android:text="TO" />
+
+    <EditText
+        android:id="@+id/et_roll_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_roll_from"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:ems="4"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/button_add_more_sequential_rolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_roll_from"
+        android:layout_marginTop="18dp"
+        android:onClick="add_more_sequential_rolls"
+        android:textColor="#ffffff"
+        android:text="Add more sequential rolls" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_add_more_non_sequential_rolls"
+        android:layout_below="@+id/button_add_more_sequential_rolls"
+        android:layout_marginTop="48dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Non sequential roll numbers :" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="36dp"
+        android:text="FROM"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/et_roll_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:background="#ffffff"
+        android:ems="4"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button_load_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="check_if_ok"
+        android:text="Load"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_add_more_non_sequential_rolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_save"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="28dp"
+        android:onClick="add_more_non_sequential_rolls"
+        android:text="Add more non sequential rolls"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/et_non_sequential_roll_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_add_more_non_sequential_rolls"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_spacebar"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_add_more_non_sequential_rolls"
+        android:layout_toRightOf="@+id/et_non_sequential_roll_numbers"
+        android:onClick="func_spacebar"
+        android:text="spacebar"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

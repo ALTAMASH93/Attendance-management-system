@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/b_load_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b_register_details"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:onClick="func_Load_Data"
+        android:text="Take Attendance"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/b_register_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_load_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:onClick="func_register_details"
+        android:text="Register Details"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_register_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:textColor="#ffffff"
+        android:onClick="check_stats"
+        android:ems="10"
+        android:text="Check Stats" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:onClick="record_deletion"
+        android:text="Record Deletion"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

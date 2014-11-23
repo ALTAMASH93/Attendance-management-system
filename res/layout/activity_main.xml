@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.easyattendance.MainActivity"
+    android:background="#000000"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/tvCLASS_NAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:textColor="#ffffff"
+        android:text="CLASS NAME" />
+
+    <TextView
+        android:id="@+id/tvNO_OF_STUDENTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_class_name"
+        android:layout_marginTop="79dp"
+        android:textColor="#ffffff"
+        android:text="NO_OF_STUDENTS" />
+
+    <EditText
+        android:id="@+id/et_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCLASS_NAME"
+        android:background="#ffffff"
+        android:ems="10" />
+     <requestFocus />
+
+    <EditText
+        android:id="@+id/et_NO_OF_STUDENTS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvNO_OF_STUDENTS"
+        android:ems="10"
+         android:background="#ffffff"
+        android:inputType="number" >
+
+       
+    </EditText>
+
+    <Button
+        android:id="@+id/button_ADD_ROLL_NUMBERS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/et_NO_OF_STUDENTS"
+        android:layout_marginTop="33dp"
+        android:text="Add ROLL NUMBERS>>"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_delete_all_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_ADD_ROLL_NUMBERS"
+        android:layout_marginTop="52dp"
+        android:onClick="delete_all_data"
+        android:text="Delete all data!"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

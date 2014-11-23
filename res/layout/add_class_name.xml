@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_fetch_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="fetch_details"
+        android:text="Fetch from entered class name!"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/et_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_fetch_details"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="53dp"
+        android:background="#ffffff"
+     
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_class_name"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:text="Class Name to fetch data for:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:text="Tip: Class name must be same as the corresponding text file name."
+        android:textColor="#ffffff"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/button_display_class_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_fetch_details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:onClick="display_class_names"
+        android:text="Fetched class names"
+        android:ems="12"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_DELETE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_display_class_names"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="delete_all_data"
+        android:textColor="#ffffff"
+         android:ems="12"
+        android:text="Unregister Classes" />
+
+</RelativeLayout>

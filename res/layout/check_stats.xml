@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Records of all students of a class"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="28dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Enter Class Name : (mandatory)" />
+
+    <EditText
+        android:id="@+id/et_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:background="#ffffff"
+        android:ems="5" >
+        <requestFocus />
+        </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_percentage"
+        android:layout_alignBottom="@+id/et_percentage"
+        android:layout_toRightOf="@+id/et_percentage"
+        android:text="%"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/et_class_name"
+        android:layout_marginTop="35dp"
+        android:text="Students having attendance less than equal to :"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="16dp"
+        android:ems="5"
+        android:background="#ffffff"
+        android:hint="0-100"
+        android:inputType="number" >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Students having attendance more than equal to :"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_filter_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/textView2"
+        android:background="#ffffff"
+        android:ems="5"
+        android:hint="0-100"
+        android:inputType="number"
+         />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_filter_2"
+        android:layout_alignBottom="@+id/et_filter_2"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="%"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/textView1"
+        android:onClick="func_filter_students"
+        android:text="Filter!"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_filter_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView03"
+        android:layout_alignBottom="@+id/TextView03"
+        android:layout_alignLeft="@+id/button_filter"
+        android:onClick="func_filter_students_2"
+        android:text="Filter!"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_date_wise_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_fetch_all"
+        android:layout_alignBottom="@+id/button_fetch_all"
+        android:layout_alignParentRight="true"
+        android:onClick="func_date_wise_data"
+        android:text="Day by day data"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/button_fetch_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="53dp"
+        android:onClick="func_fetch_all"
+        android:text="Summed up data"
+        android:textColor="#ffffff" />
+   
+</RelativeLayout>

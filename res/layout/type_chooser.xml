@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_fetch_from_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:ems="13"
+        android:text="Fetch from file"
+        android:textColor="#ffffff"
+        android:onClick="func_fetch_from_file"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_fetch_from_file"
+        android:layout_marginTop="19dp"
+        android:textColor="#ffffff"
+        android:textStyle="italic"
+        android:text="A better method but requires manual effort.Use it when you have saved roll numbers and names to a text file and want to fetch it from there." />
+
+    <Button
+        android:id="@+id/button_insert_yourself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_fetch_from_file"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="82dp"
+        android:ems="13"
+        android:text="Insert rolls yourself"
+        android:textColor="#ffffff"
+        android:onClick="func_insert_rolls"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_insert_yourself"
+        android:layout_marginTop="19dp"
+        android:text="Requires less manual effort but supports only roll numbers.Useful for on spot registration when no prior details are available!"
+        android:textColor="#ffffff"
+        android:textStyle="italic" />
+
+</RelativeLayout>
